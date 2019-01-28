@@ -1,6 +1,8 @@
 # OSH-PY
 This is a pure Python implementation of SWE Common and SensorML meant to be directly compatible with OpenSensorHub
 
+## NOTE: this is also a learning exercise to improve familiarity with important OGC standards and should not be used in a production environment unless and official release is tagged and code coverage has been implemented. All other uses of the code are welcome.
+
 ## WIP Features
 1. Full Implementation of OGC SWE Common Data Model (Ver. 2.0)
 2. Full Implementation of OGC SensorML
