@@ -1,13 +1,13 @@
 # Defines a common set of members and operations consistent with the language used in version
 # 2.0 of OGC's SWE Common Data Model
 
+from . import datatype as dt
 
 class AbstractSimpleComponent:
-    data_type: DataType
-    ogc_property_list: SimpleComponent
+    data_type: dt.DataType
+    _qualityList:
     reference_frame: str = None
     axis_id: str = None
-    quality: Quality = None
     nil_values = None
 
     def copyTo(self, other: AbstractSimpleComponent):
@@ -24,3 +24,4 @@ class AbstractSimpleComponent:
         other.axis_id = self.axis_id
 
 # TODO: Implement Base Classes from SWE Common UML Diagrams
+# TODO: Ensure all data is properly serializable
